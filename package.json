@@ -7,6 +7,13 @@
   "author": "Sankarsan Kampa",
   "license": "GPL-3.0",
   "private": true,
+  "scripts": {
+    "gulp:clean": "gulp clean",
+    "gulp:compile": "gulp compile",
+    "build": "npm run gulp:clean && npm run gulp:compile",
+    "start": "npm run build && node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "devDependencies": {
     "@types/node": "^10.10.3",
     "del": "^3.0.0",
