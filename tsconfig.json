@@ -1,0 +1,35 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "typings",
+    "declarationMap": true,
+    "diagnostics": true,
+    "emitBOM": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "newLine": "lf",
+    "noErrorTruncation": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "build",
+    "preserveWatchOutput": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "rootDir": "source",
+    "sourceMap": true,
+    "target": "es6"
+  },
+  "exclude": [
+    "node_modules",
+    "*.py"
+  ],
+  "include": [
+    "source/**/*"
+  ],
+  "typeRoots" : [
+    "./typings"
+  ]
+}
