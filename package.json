@@ -2,7 +2,7 @@
   "name": "WebDriverBinariesAPI",
   "version": "1.0.0",
   "description": "A small API to allow you to download the latest version of WebDriver Binaries of different browsers.",
-  "main": "./build/app.js",
+  "main": "./scripts/serve",
   "repository": "https://github.com/k3rn31p4nic/WebDriverBinariesAPI.git",
   "author": "Sankarsan Kampa",
   "license": "GPL-3.0",
