@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+# Run Chrome WebDriver downloader script.
+python chrome.py
+
+# Run Firefox WebDriver downloader script.
+python firefox.py
