@@ -1,4 +1,6 @@
-from urllib import request
+#!/usr/bin/env python
+
+import urllib as request
 
 
 # Get the latest version number of Chrome WebDriver

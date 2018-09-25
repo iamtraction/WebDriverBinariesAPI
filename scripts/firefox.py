@@ -1,5 +1,7 @@
+#!/usr/bin/env python
+
 import json
-from urllib import request
+import urllib as request
 
 
 # Get the latest build name & download links of Firefox WebDriver
