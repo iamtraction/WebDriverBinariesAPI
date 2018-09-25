@@ -10,7 +10,7 @@
   "scripts": {
     "gulp:clean": "gulp clean",
     "gulp:compile": "gulp compile",
-    "download": "bash ./scripts/download || powershell -File ./scripts/download.ps1",
+    "download": "bash ./scripts/download.sh || powershell -File ./scripts/download.ps1",
     "build": "npm run gulp:clean && npm run gulp:compile",
     "start": "npm run build && npm run download && node .",
     "test": "echo \"Error: no test specified\" && exit 1"
