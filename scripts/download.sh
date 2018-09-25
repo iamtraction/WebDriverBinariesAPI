@@ -2,7 +2,7 @@
 set -e
 
 # Run Chrome WebDriver downloader script.
-python chrome.py
+python ./scripts/chrome.py
 
 # Run Firefox WebDriver downloader script.
-python firefox.py
+python ./scripts/firefox.py
