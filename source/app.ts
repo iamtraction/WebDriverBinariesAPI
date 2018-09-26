@@ -6,6 +6,7 @@ import * as logger from "morgan";
 
 import * as IndexRoute from "./routes/index";
 import * as ChromeRoute from "./routes/chrome";
+import * as FirefoxRoute from "./routes/firefox";
 
 /**
  * The server.
@@ -76,10 +77,12 @@ class Server {
     // Create routes
     const Index: IndexRoute.Index = new IndexRoute.Index();
     const Chrome: ChromeRoute.Chrome = new ChromeRoute.Chrome();
+    const Firefox: FirefoxRoute.Firefox = new FirefoxRoute.Firefox();
 
     // Routes
     router.get("/", Index.main.bind(Index.main));
     router.get("/chrome", Chrome.main.bind(Chrome.main));
+    router.get("/firefox", Firefox.main.bind(Firefox.main));
 
     // Use router middleware
     this.app.use(router);
