@@ -5,6 +5,7 @@ import * as express from "express";
 import * as logger from "morgan";
 
 import * as IndexRoute from "./routes/index";
+import * as ChromeRoute from "./routes/chrome";
 
 /**
  * The server.
@@ -74,9 +75,11 @@ class Server {
 
     // Create routes
     const Index: IndexRoute.Index = new IndexRoute.Index();
+    const Chrome: ChromeRoute.Chrome = new ChromeRoute.Chrome();
 
     // Routes
     router.get("/", Index.main.bind(Index.main));
+    router.get("/chrome", Chrome.main.bind(Chrome.main));
 
     // Use router middleware
     this.app.use(router);
